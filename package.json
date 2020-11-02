@@ -1,0 +1,16 @@
+{
+  "name": "angular-notifier",
+  "main": "bundles/angular-notifier.umd.js",
+  "module": "fesm5/angular-notifier.js",
+  "es2015": "fesm2015/angular-notifier.js",
+  "esm5": "esm5/angular-notifier.js",
+  "esm2015": "esm2015/angular-notifier.js",
+  "fesm5": "fesm5/angular-notifier.js",
+  "fesm2015": "fesm2015/angular-notifier.js",
+  "typings": "angular-notifier.d.ts",
+  "metadata": "angular-notifier.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
