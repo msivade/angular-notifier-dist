@@ -1,6 +1,5 @@
 import { NotifierAnimationData } from '../models/notifier-animation.model';
 import { NotifierNotification } from '../models/notifier-notification.model';
-import * as i0 from "@angular/core";
 /**
  * Notifier animation service
  */
@@ -24,6 +23,4 @@ export declare class NotifierAnimationService {
      * @returns Animation information
      */
     getAnimationData(direction: 'show' | 'hide', notification: NotifierNotification): NotifierAnimationData;
-    static ɵfac: i0.ɵɵFactoryDef<NotifierAnimationService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<NotifierAnimationService>;
 }

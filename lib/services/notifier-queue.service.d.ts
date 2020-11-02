@@ -1,6 +1,5 @@
 import { Subject } from 'rxjs';
 import { NotifierAction } from '../models/notifier-action.model';
-import * as i0 from "@angular/core";
 /**
  * Notifier queue service
  *
@@ -43,6 +42,4 @@ export declare class NotifierQueueService {
      * Try to run the next action in the queue; we skip if there already is some action in progress, or if there is no action left
      */
     private tryToRunNextAction;
-    static ɵfac: i0.ɵɵFactoryDef<NotifierQueueService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<NotifierQueueService>;
 }

@@ -1,4 +1,3 @@
-import * as i0 from "@angular/core";
 /**
  * Notifier timer service
  *
@@ -49,6 +48,4 @@ export declare class NotifierTimerService {
      * Finish up the timeout by resolving the timer promise
      */
     private finish;
-    static ɵfac: i0.ɵɵFactoryDef<NotifierTimerService, never>;
-    static ɵprov: i0.ɵɵInjectableDef<NotifierTimerService>;
 }
