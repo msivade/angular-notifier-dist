@@ -4,6 +4,7 @@ import { NotifierConfig } from '../models/notifier-config.model';
 import { NotifierNotification } from '../models/notifier-notification.model';
 import { NotifierService } from '../services/notifier.service';
 import { NotifierTimerService } from '../services/notifier-timer.service';
+import * as i0 from "@angular/core";
 /**
  * Notifier notification component
  * -------------------------------
@@ -151,4 +152,6 @@ export declare class NotifierNotificationComponent implements AfterViewInit {
      * Initial notification setup
      */
     private setup;
+    static ɵfac: i0.ɵɵFactoryDef<NotifierNotificationComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NotifierNotificationComponent, "notifier-notification", never, { "notification": "notification"; }, { "ready": "ready"; "dismiss": "dismiss"; }, never, never>;
 }

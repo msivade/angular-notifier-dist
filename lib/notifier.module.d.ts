@@ -1,5 +1,9 @@
 import { ModuleWithProviders } from '@angular/core';
 import { NotifierConfig, NotifierOptions } from './models/notifier-config.model';
+import * as i0 from "@angular/core";
+import * as i1 from "./components/notifier-container.component";
+import * as i2 from "./components/notifier-notification.component";
+import * as i3 from "@angular/common";
 /**
  * Factory for a notifier configuration with custom options
  *
@@ -29,5 +33,7 @@ export declare class NotifierModule {
      * @param   [options={}] - Custom notifier options
      * @returns - Notifier module with custom providers
      */
-    static withConfig(options?: NotifierOptions): ModuleWithProviders;
+    static withConfig(options?: NotifierOptions): i0.ModuleWithProviders<NotifierModule>;
+    static ɵmod: i0.ɵɵNgModuleDefWithMeta<NotifierModule, [typeof i1.NotifierContainerComponent, typeof i2.NotifierNotificationComponent], [typeof i3.CommonModule], [typeof i1.NotifierContainerComponent]>;
+    static ɵinj: i0.ɵɵInjectorDef<NotifierModule>;
 }

@@ -3,6 +3,7 @@ import { NotifierNotification } from '../models/notifier-notification.model';
 import { NotifierQueueService } from '../services/notifier-queue.service';
 import { NotifierService } from '../services/notifier.service';
 import { NotifierNotificationComponent } from './notifier-notification.component';
+import * as i0 from "@angular/core";
 /**
  * Notifier container component
  * ----------------------------
@@ -171,4 +172,6 @@ export declare class NotifierContainerComponent implements OnDestroy {
      * @returns Notification index, undefined if not found
      */
     private findNotificationIndexById;
+    static ɵfac: i0.ɵɵFactoryDef<NotifierContainerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NotifierContainerComponent, "notifier-container", never, {}, {}, never, never>;
 }

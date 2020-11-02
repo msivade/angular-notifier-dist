@@ -1,9 +1,5 @@
-/**
- * @fileoverview added by tsickle
- * Generated from: lib/services/notifier-timer.service.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 import { Injectable } from '@angular/core';
+import * as i0 from "@angular/core";
 /**
  * Notifier timer service
  *
@@ -24,132 +20,52 @@ var NotifierTimerService = /** @class */ (function () {
      * @param   duration Timer duration, in ms
      * @returns          Promise, resolved once the timer finishes
      */
-    /**
-     * Start (or resume) the timer
-     *
-     * @param {?} duration Timer duration, in ms
-     * @return {?} Promise, resolved once the timer finishes
-     */
-    NotifierTimerService.prototype.start = /**
-     * Start (or resume) the timer
-     *
-     * @param {?} duration Timer duration, in ms
-     * @return {?} Promise, resolved once the timer finishes
-     */
-    function (duration) {
+    NotifierTimerService.prototype.start = function (duration) {
         var _this = this;
-        return new Promise((/**
-         * @param {?} resolve
-         * @param {?} reject
-         * @return {?}
-         */
-        function (resolve, reject) {
+        return new Promise(function (resolve, reject) {
             // For the first run ...
             _this.remaining = duration;
             // Setup, then start the timer
             _this.finishPromiseResolver = resolve;
             _this.continue();
-        }));
+        });
     };
     /**
      * Pause the timer
      */
-    /**
-     * Pause the timer
-     * @return {?}
-     */
-    NotifierTimerService.prototype.pause = /**
-     * Pause the timer
-     * @return {?}
-     */
-    function () {
+    NotifierTimerService.prototype.pause = function () {
         clearTimeout(this.timerId);
         this.remaining -= new Date().getTime() - this.now;
     };
     /**
      * Continue the timer
      */
-    /**
-     * Continue the timer
-     * @return {?}
-     */
-    NotifierTimerService.prototype.continue = /**
-     * Continue the timer
-     * @return {?}
-     */
-    function () {
+    NotifierTimerService.prototype.continue = function () {
         var _this = this;
         this.now = new Date().getTime();
-        this.timerId = window.setTimeout((/**
-         * @return {?}
-         */
-        function () {
+        this.timerId = window.setTimeout(function () {
             _this.finish();
-        }), this.remaining);
+        }, this.remaining);
     };
     /**
      * Stop the timer
      */
-    /**
-     * Stop the timer
-     * @return {?}
-     */
-    NotifierTimerService.prototype.stop = /**
-     * Stop the timer
-     * @return {?}
-     */
-    function () {
+    NotifierTimerService.prototype.stop = function () {
         clearTimeout(this.timerId);
         this.remaining = 0;
     };
     /**
      * Finish up the timeout by resolving the timer promise
      */
-    /**
-     * Finish up the timeout by resolving the timer promise
-     * @private
-     * @return {?}
-     */
-    NotifierTimerService.prototype.finish = /**
-     * Finish up the timeout by resolving the timer promise
-     * @private
-     * @return {?}
-     */
-    function () {
+    NotifierTimerService.prototype.finish = function () {
         this.finishPromiseResolver();
     };
-    NotifierTimerService.decorators = [
-        { type: Injectable }
-    ];
-    /** @nocollapse */
-    NotifierTimerService.ctorParameters = function () { return []; };
+    /** @nocollapse */ NotifierTimerService.ɵfac = function NotifierTimerService_Factory(t) { return new (t || NotifierTimerService)(); };
+    /** @nocollapse */ NotifierTimerService.ɵprov = i0.ɵɵdefineInjectable({ token: NotifierTimerService, factory: NotifierTimerService.ɵfac });
     return NotifierTimerService;
 }());
 export { NotifierTimerService };
-if (false) {
-    /**
-     * Timestamp (in ms), created in the moment the timer starts
-     * @type {?}
-     * @private
-     */
-    NotifierTimerService.prototype.now;
-    /**
-     * Remaining time (in ms)
-     * @type {?}
-     * @private
-     */
-    NotifierTimerService.prototype.remaining;
-    /**
-     * Timeout ID, used for clearing the timeout later on
-     * @type {?}
-     * @private
-     */
-    NotifierTimerService.prototype.timerId;
-    /**
-     * Promise resolve function, eventually getting called once the timer finishes
-     * @type {?}
-     * @private
-     */
-    NotifierTimerService.prototype.finishPromiseResolver;
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm90aWZpZXItdGltZXIuc2VydmljZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2FuZ3VsYXItbm90aWZpZXIvIiwic291cmNlcyI6WyJsaWIvc2VydmljZXMvbm90aWZpZXItdGltZXIuc2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQUFBLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7Ozs7Ozs7QUFRM0M7SUF1QkM7O09BRUc7SUFDSDtRQUNDLElBQUksQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDO1FBQ2IsSUFBSSxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUM7SUFDcEIsQ0FBQztJQUVEOzs7OztPQUtHOzs7Ozs7O0lBQ0ksb0NBQUs7Ozs7OztJQUFaLFVBQWMsUUFBZ0I7UUFBOUIsaUJBV0M7UUFWQSxPQUFPLElBQUksT0FBTzs7Ozs7UUFBYSxVQUFFLE9BQW1CLEVBQUUsTUFBa0I7WUFFdkUsd0JBQXdCO1lBQ3hCLEtBQUksQ0FBQyxTQUFTLEdBQUcsUUFBUSxDQUFDO1lBRTFCLDhCQUE4QjtZQUM5QixLQUFJLENBQUMscUJBQXFCLEdBQUcsT0FBTyxDQUFDO1lBQ3JDLEtBQUksQ0FBQyxRQUFRLEVBQUUsQ0FBQztRQUVqQixDQUFDLEVBQUUsQ0FBQztJQUNMLENBQUM7SUFFRDs7T0FFRzs7Ozs7SUFDSSxvQ0FBSzs7OztJQUFaO1FBQ0MsWUFBWSxDQUFFLElBQUksQ0FBQyxPQUFPLENBQUUsQ0FBQztRQUM3QixJQUFJLENBQUMsU0FBUyxJQUFJLElBQUksSUFBSSxFQUFFLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQztJQUNuRCxDQUFDO0lBRUQ7O09BRUc7Ozs7O0lBQ0ksdUNBQVE7Ozs7SUFBZjtRQUFBLGlCQUtDO1FBSkEsSUFBSSxDQUFDLEdBQUcsR0FBRyxJQUFJLElBQUksRUFBRSxDQUFDLE9BQU8sRUFBRSxDQUFDO1FBQ2hDLElBQUksQ0FBQyxPQUFPLEdBQUcsTUFBTSxDQUFDLFVBQVU7OztRQUFFO1lBQ2pDLEtBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQztRQUNmLENBQUMsR0FBRSxJQUFJLENBQUMsU0FBUyxDQUFFLENBQUM7SUFDckIsQ0FBQztJQUVEOztPQUVHOzs7OztJQUNJLG1DQUFJOzs7O0lBQVg7UUFDQyxZQUFZLENBQUUsSUFBSSxDQUFDLE9BQU8sQ0FBRSxDQUFDO1FBQzdCLElBQUksQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDO0lBQ3BCLENBQUM7SUFFRDs7T0FFRzs7Ozs7O0lBQ0sscUNBQU07Ozs7O0lBQWQ7UUFDQyxJQUFJLENBQUMscUJBQXFCLEVBQUUsQ0FBQztJQUM5QixDQUFDOztnQkFqRkQsVUFBVTs7OztJQW1GWCwyQkFBQztDQUFBLEFBbkZELElBbUZDO1NBbEZZLG9CQUFvQjs7Ozs7OztJQUtoQyxtQ0FBb0I7Ozs7OztJQUtwQix5Q0FBMEI7Ozs7OztJQUsxQix1Q0FBd0I7Ozs7OztJQUt4QixxREFBMEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbi8qKlxuICogTm90aWZpZXIgdGltZXIgc2VydmljZVxuICpcbiAqIFRoaXMgc2VydmljZSBhY3RzIGFzIGEgdGltZXIsIG5lZWRlZCBkdWUgdG8gdGhlIHN0aWxsIHJhdGhlciBsaW1pdGVkIHNldFRpbWVvdXQgSmF2YVNjcmlwdCBBUEkuIFRoZSB0aW1lciBzZXJ2aWNlIGNhbiBzdGFydCBhbmQgc3RvcCBhXG4gKiB0aW1lci4gRnVydGhlcm1vcmUsIGl0IGNhbiBhbHNvIHBhdXNlIHRoZSB0aW1lciBhdCBhbnkgdGltZSwgYW5kIHJlc3VtZSBsYXRlciBvbi4gVGhlIHRpbWVyIEFQSSB3b3JrZCBwcm9taXNlLWJhc2VkLlxuICovXG5ASW5qZWN0YWJsZSgpXG5leHBvcnQgY2xhc3MgTm90aWZpZXJUaW1lclNlcnZpY2Uge1xuXG5cdC8qKlxuXHQgKiBUaW1lc3RhbXAgKGluIG1zKSwgY3JlYXRlZCBpbiB0aGUgbW9tZW50IHRoZSB0aW1lciBzdGFydHNcblx0ICovXG5cdHByaXZhdGUgbm93OiBudW1iZXI7XG5cblx0LyoqXG5cdCAqIFJlbWFpbmluZyB0aW1lIChpbiBtcylcblx0ICovXG5cdHByaXZhdGUgcmVtYWluaW5nOiBudW1iZXI7XG5cblx0LyoqXG5cdCAqIFRpbWVvdXQgSUQsIHVzZWQgZm9yIGNsZWFyaW5nIHRoZSB0aW1lb3V0IGxhdGVyIG9uXG5cdCAqL1xuXHRwcml2YXRlIHRpbWVySWQ6IG51bWJlcjtcblxuXHQvKipcblx0ICogUHJvbWlzZSByZXNvbHZlIGZ1bmN0aW9uLCBldmVudHVhbGx5IGdldHRpbmcgY2FsbGVkIG9uY2UgdGhlIHRpbWVyIGZpbmlzaGVzXG5cdCAqL1xuXHRwcml2YXRlIGZpbmlzaFByb21pc2VSZXNvbHZlcjogKCkgPT4gdm9pZDtcblxuXHQvKipcblx0ICogQ29uc3RydWN0b3Jcblx0ICovXG5cdHB1YmxpYyBjb25zdHJ1Y3RvcigpIHtcblx0XHR0aGlzLm5vdyA9IDA7XG5cdFx0dGhpcy5yZW1haW5pbmcgPSAwO1xuXHR9XG5cblx0LyoqXG5cdCAqIFN0YXJ0IChvciByZXN1bWUpIHRoZSB0aW1lclxuXHQgKlxuXHQgKiBAcGFyYW0gICBkdXJhdGlvbiBUaW1lciBkdXJhdGlvbiwgaW4gbXNcblx0ICogQHJldHVybnMgICAgICAgICAgUHJvbWlzZSwgcmVzb2x2ZWQgb25jZSB0aGUgdGltZXIgZmluaXNoZXNcblx0ICovXG5cdHB1YmxpYyBzdGFydCggZHVyYXRpb246IG51bWJlciApOiBQcm9taXNlPHVuZGVmaW5lZD4ge1xuXHRcdHJldHVybiBuZXcgUHJvbWlzZTx1bmRlZmluZWQ+KCAoIHJlc29sdmU6ICgpID0+IHZvaWQsIHJlamVjdDogKCkgPT4gdm9pZCApID0+IHtcblxuXHRcdFx0Ly8gRm9yIHRoZSBmaXJzdCBydW4gLi4uXG5cdFx0XHR0aGlzLnJlbWFpbmluZyA9IGR1cmF0aW9uO1xuXG5cdFx0XHQvLyBTZXR1cCwgdGhlbiBzdGFydCB0aGUgdGltZXJcblx0XHRcdHRoaXMuZmluaXNoUHJvbWlzZVJlc29sdmVyID0gcmVzb2x2ZTtcblx0XHRcdHRoaXMuY29udGludWUoKTtcblxuXHRcdH0gKTtcblx0fVxuXG5cdC8qKlxuXHQgKiBQYXVzZSB0aGUgdGltZXJcblx0ICovXG5cdHB1YmxpYyBwYXVzZSgpOiB2b2lkIHtcblx0XHRjbGVhclRpbWVvdXQoIHRoaXMudGltZXJJZCApO1xuXHRcdHRoaXMucmVtYWluaW5nIC09IG5ldyBEYXRlKCkuZ2V0VGltZSgpIC0gdGhpcy5ub3c7XG5cdH1cblxuXHQvKipcblx0ICogQ29udGludWUgdGhlIHRpbWVyXG5cdCAqL1xuXHRwdWJsaWMgY29udGludWUoKTogdm9pZCB7XG5cdFx0dGhpcy5ub3cgPSBuZXcgRGF0ZSgpLmdldFRpbWUoKTtcblx0XHR0aGlzLnRpbWVySWQgPSB3aW5kb3cuc2V0VGltZW91dCggKCkgPT4ge1xuXHRcdFx0dGhpcy5maW5pc2goKTtcblx0XHR9LCB0aGlzLnJlbWFpbmluZyApO1xuXHR9XG5cblx0LyoqXG5cdCAqIFN0b3AgdGhlIHRpbWVyXG5cdCAqL1xuXHRwdWJsaWMgc3RvcCgpOiB2b2lkIHtcblx0XHRjbGVhclRpbWVvdXQoIHRoaXMudGltZXJJZCApO1xuXHRcdHRoaXMucmVtYWluaW5nID0gMDtcblx0fVxuXG5cdC8qKlxuXHQgKiBGaW5pc2ggdXAgdGhlIHRpbWVvdXQgYnkgcmVzb2x2aW5nIHRoZSB0aW1lciBwcm9taXNlXG5cdCAqL1xuXHRwcml2YXRlIGZpbmlzaCgpOiB2b2lkIHtcblx0XHR0aGlzLmZpbmlzaFByb21pc2VSZXNvbHZlcigpO1xuXHR9XG5cbn1cbiJdfQ==
+/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NotifierTimerService, [{
+        type: Injectable
+    }], function () { return []; }, null); })();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm90aWZpZXItdGltZXIuc2VydmljZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2FuZ3VsYXItbm90aWZpZXIvIiwic291cmNlcyI6WyJsaWIvc2VydmljZXMvbm90aWZpZXItdGltZXIuc2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDOztBQUUzQzs7Ozs7R0FLRztBQUNIO0lBdUJDOztPQUVHO0lBQ0g7UUFDQyxJQUFJLENBQUMsR0FBRyxHQUFHLENBQUMsQ0FBQztRQUNiLElBQUksQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDO0lBQ3BCLENBQUM7SUFFRDs7Ozs7T0FLRztJQUNJLG9DQUFLLEdBQVosVUFBYyxRQUFnQjtRQUE5QixpQkFXQztRQVZBLE9BQU8sSUFBSSxPQUFPLENBQWEsVUFBRSxPQUFtQixFQUFFLE1BQWtCO1lBRXZFLHdCQUF3QjtZQUN4QixLQUFJLENBQUMsU0FBUyxHQUFHLFFBQVEsQ0FBQztZQUUxQiw4QkFBOEI7WUFDOUIsS0FBSSxDQUFDLHFCQUFxQixHQUFHLE9BQU8sQ0FBQztZQUNyQyxLQUFJLENBQUMsUUFBUSxFQUFFLENBQUM7UUFFakIsQ0FBQyxDQUFFLENBQUM7SUFDTCxDQUFDO0lBRUQ7O09BRUc7SUFDSSxvQ0FBSyxHQUFaO1FBQ0MsWUFBWSxDQUFFLElBQUksQ0FBQyxPQUFPLENBQUUsQ0FBQztRQUM3QixJQUFJLENBQUMsU0FBUyxJQUFJLElBQUksSUFBSSxFQUFFLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQztJQUNuRCxDQUFDO0lBRUQ7O09BRUc7SUFDSSx1Q0FBUSxHQUFmO1FBQUEsaUJBS0M7UUFKQSxJQUFJLENBQUMsR0FBRyxHQUFHLElBQUksSUFBSSxFQUFFLENBQUMsT0FBTyxFQUFFLENBQUM7UUFDaEMsSUFBSSxDQUFDLE9BQU8sR0FBRyxNQUFNLENBQUMsVUFBVSxDQUFFO1lBQ2pDLEtBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQztRQUNmLENBQUMsRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFFLENBQUM7SUFDckIsQ0FBQztJQUVEOztPQUVHO0lBQ0ksbUNBQUksR0FBWDtRQUNDLFlBQVksQ0FBRSxJQUFJLENBQUMsT0FBTyxDQUFFLENBQUM7UUFDN0IsSUFBSSxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUM7SUFDcEIsQ0FBQztJQUVEOztPQUVHO0lBQ0sscUNBQU0sR0FBZDtRQUNDLElBQUksQ0FBQyxxQkFBcUIsRUFBRSxDQUFDO0lBQzlCLENBQUM7K0dBaEZXLG9CQUFvQjttRkFBcEIsb0JBQW9CLFdBQXBCLG9CQUFvQjsrQkFUakM7Q0EyRkMsQUFuRkQsSUFtRkM7U0FsRlksb0JBQW9CO2tEQUFwQixvQkFBb0I7Y0FEaEMsVUFBVSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuLyoqXG4gKiBOb3RpZmllciB0aW1lciBzZXJ2aWNlXG4gKlxuICogVGhpcyBzZXJ2aWNlIGFjdHMgYXMgYSB0aW1lciwgbmVlZGVkIGR1ZSB0byB0aGUgc3RpbGwgcmF0aGVyIGxpbWl0ZWQgc2V0VGltZW91dCBKYXZhU2NyaXB0IEFQSS4gVGhlIHRpbWVyIHNlcnZpY2UgY2FuIHN0YXJ0IGFuZCBzdG9wIGFcbiAqIHRpbWVyLiBGdXJ0aGVybW9yZSwgaXQgY2FuIGFsc28gcGF1c2UgdGhlIHRpbWVyIGF0IGFueSB0aW1lLCBhbmQgcmVzdW1lIGxhdGVyIG9uLiBUaGUgdGltZXIgQVBJIHdvcmtkIHByb21pc2UtYmFzZWQuXG4gKi9cbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBOb3RpZmllclRpbWVyU2VydmljZSB7XG5cblx0LyoqXG5cdCAqIFRpbWVzdGFtcCAoaW4gbXMpLCBjcmVhdGVkIGluIHRoZSBtb21lbnQgdGhlIHRpbWVyIHN0YXJ0c1xuXHQgKi9cblx0cHJpdmF0ZSBub3c6IG51bWJlcjtcblxuXHQvKipcblx0ICogUmVtYWluaW5nIHRpbWUgKGluIG1zKVxuXHQgKi9cblx0cHJpdmF0ZSByZW1haW5pbmc6IG51bWJlcjtcblxuXHQvKipcblx0ICogVGltZW91dCBJRCwgdXNlZCBmb3IgY2xlYXJpbmcgdGhlIHRpbWVvdXQgbGF0ZXIgb25cblx0ICovXG5cdHByaXZhdGUgdGltZXJJZDogbnVtYmVyO1xuXG5cdC8qKlxuXHQgKiBQcm9taXNlIHJlc29sdmUgZnVuY3Rpb24sIGV2ZW50dWFsbHkgZ2V0dGluZyBjYWxsZWQgb25jZSB0aGUgdGltZXIgZmluaXNoZXNcblx0ICovXG5cdHByaXZhdGUgZmluaXNoUHJvbWlzZVJlc29sdmVyOiAoKSA9PiB2b2lkO1xuXG5cdC8qKlxuXHQgKiBDb25zdHJ1Y3RvclxuXHQgKi9cblx0cHVibGljIGNvbnN0cnVjdG9yKCkge1xuXHRcdHRoaXMubm93ID0gMDtcblx0XHR0aGlzLnJlbWFpbmluZyA9IDA7XG5cdH1cblxuXHQvKipcblx0ICogU3RhcnQgKG9yIHJlc3VtZSkgdGhlIHRpbWVyXG5cdCAqXG5cdCAqIEBwYXJhbSAgIGR1cmF0aW9uIFRpbWVyIGR1cmF0aW9uLCBpbiBtc1xuXHQgKiBAcmV0dXJucyAgICAgICAgICBQcm9taXNlLCByZXNvbHZlZCBvbmNlIHRoZSB0aW1lciBmaW5pc2hlc1xuXHQgKi9cblx0cHVibGljIHN0YXJ0KCBkdXJhdGlvbjogbnVtYmVyICk6IFByb21pc2U8dW5kZWZpbmVkPiB7XG5cdFx0cmV0dXJuIG5ldyBQcm9taXNlPHVuZGVmaW5lZD4oICggcmVzb2x2ZTogKCkgPT4gdm9pZCwgcmVqZWN0OiAoKSA9PiB2b2lkICkgPT4ge1xuXG5cdFx0XHQvLyBGb3IgdGhlIGZpcnN0IHJ1biAuLi5cblx0XHRcdHRoaXMucmVtYWluaW5nID0gZHVyYXRpb247XG5cblx0XHRcdC8vIFNldHVwLCB0aGVuIHN0YXJ0IHRoZSB0aW1lclxuXHRcdFx0dGhpcy5maW5pc2hQcm9taXNlUmVzb2x2ZXIgPSByZXNvbHZlO1xuXHRcdFx0dGhpcy5jb250aW51ZSgpO1xuXG5cdFx0fSApO1xuXHR9XG5cblx0LyoqXG5cdCAqIFBhdXNlIHRoZSB0aW1lclxuXHQgKi9cblx0cHVibGljIHBhdXNlKCk6IHZvaWQge1xuXHRcdGNsZWFyVGltZW91dCggdGhpcy50aW1lcklkICk7XG5cdFx0dGhpcy5yZW1haW5pbmcgLT0gbmV3IERhdGUoKS5nZXRUaW1lKCkgLSB0aGlzLm5vdztcblx0fVxuXG5cdC8qKlxuXHQgKiBDb250aW51ZSB0aGUgdGltZXJcblx0ICovXG5cdHB1YmxpYyBjb250aW51ZSgpOiB2b2lkIHtcblx0XHR0aGlzLm5vdyA9IG5ldyBEYXRlKCkuZ2V0VGltZSgpO1xuXHRcdHRoaXMudGltZXJJZCA9IHdpbmRvdy5zZXRUaW1lb3V0KCAoKSA9PiB7XG5cdFx0XHR0aGlzLmZpbmlzaCgpO1xuXHRcdH0sIHRoaXMucmVtYWluaW5nICk7XG5cdH1cblxuXHQvKipcblx0ICogU3RvcCB0aGUgdGltZXJcblx0ICovXG5cdHB1YmxpYyBzdG9wKCk6IHZvaWQge1xuXHRcdGNsZWFyVGltZW91dCggdGhpcy50aW1lcklkICk7XG5cdFx0dGhpcy5yZW1haW5pbmcgPSAwO1xuXHR9XG5cblx0LyoqXG5cdCAqIEZpbmlzaCB1cCB0aGUgdGltZW91dCBieSByZXNvbHZpbmcgdGhlIHRpbWVyIHByb21pc2Vcblx0ICovXG5cdHByaXZhdGUgZmluaXNoKCk6IHZvaWQge1xuXHRcdHRoaXMuZmluaXNoUHJvbWlzZVJlc29sdmVyKCk7XG5cdH1cblxufVxuIl19

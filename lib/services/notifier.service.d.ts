@@ -1,6 +1,7 @@
 import { NotifierConfig } from '../models/notifier-config.model';
 import { NotifierNotificationOptions } from '../models/notifier-notification.model';
 import { NotifierQueueService } from './notifier-queue.service';
+import * as i0 from "@angular/core";
 /**
  * Notifier service
  *
@@ -62,4 +63,6 @@ export declare class NotifierService {
      * @param [notificationId] Unique ID for the notification (optional)
      */
     notify(type: string, message: string, notificationId?: string): void;
+    static ɵfac: i0.ɵɵFactoryDef<NotifierService, never>;
+    static ɵprov: i0.ɵɵInjectableDef<NotifierService>;
 }

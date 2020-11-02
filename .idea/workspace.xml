@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68bd43de-6c72-423f-a786-c120180310bc" name="Default Changelist" comment="Builded angular-notifier for angular 9" />
+    <list default="true" id="68bd43de-6c72-423f-a786-c120180310bc" name="Default Changelist" comment="Builded angular-notifier for angular 9 with styles.css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +86,7 @@
       <updated>1604072260623</updated>
       <workItem from="1604072261750" duration="977000" />
       <workItem from="1604307080254" duration="1253000" />
+      <workItem from="1604308647015" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="Builded angular-notifier for angular 9">
       <created>1604072323000</created>
@@ -120,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604308001933</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Builded angular-notifier for angular 9 with styles.css">
+      <created>1604308733506</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604308733506</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,12 +150,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Builded angular-notifier for angular 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Builded angular-notifier for angular 9" />
+    <MESSAGE value="Builded angular-notifier for angular 9 with styles.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Builded angular-notifier for angular 9 with styles.css" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604308114808">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604308737589">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604308114808" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604308737589" />
   </component>
 </project>
