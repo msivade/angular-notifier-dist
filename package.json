@@ -1,17 +1,15 @@
 {
   "name": "angular-notifier",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "main": "bundles/angular-notifier.umd.js",
-  "module": "fesm5/angular-notifier.js",
+  "module": "fesm2015/angular-notifier.js",
   "es2015": "fesm2015/angular-notifier.js",
-  "esm5": "esm5/angular-notifier.js",
   "esm2015": "esm2015/angular-notifier.js",
-  "fesm5": "fesm5/angular-notifier.js",
   "fesm2015": "fesm2015/angular-notifier.js",
   "typings": "angular-notifier.d.ts",
   "sideEffects": false,
-  "dependencies": {
-    "tslib": "^1.10.0"
-  },
   "scripts": {
     "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
   }

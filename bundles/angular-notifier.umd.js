@@ -1,8 +1,8 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('angular-notifier', ['exports', '@angular/core', 'rxjs', '@angular/common'], factory) :
-    (global = global || self, factory(global['angular-notifier'] = {}, global.ng.core, global.rxjs, global.ng.common));
-}(this, (function (exports, core, rxjs, common) { 'use strict';
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['angular-notifier'] = {}, global.ng.core, global.rxjs, global.ng.common));
+}(this, (function (exports, i0, rxjs, i4) { 'use strict';
 
     /**
      * Notification
@@ -78,23 +78,25 @@
             this.isActionInProgress = true;
             this.actionStream.next(this.actionQueue.shift()); // Push next action to the stream, and remove the current action from the queue
         };
-        /** @nocollapse */ NotifierQueueService.ɵfac = function NotifierQueueService_Factory(t) { return new (t || NotifierQueueService)(); };
-        /** @nocollapse */ NotifierQueueService.ɵprov = core.ɵɵdefineInjectable({ token: NotifierQueueService, factory: NotifierQueueService.ɵfac });
         return NotifierQueueService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierQueueService, [{
-            type: core.Injectable
-        }], function () { return []; }, null); })();
+    /** @nocollapse */ NotifierQueueService.ɵfac = function NotifierQueueService_Factory(t) { return new (t || NotifierQueueService)(); };
+    /** @nocollapse */ NotifierQueueService.ɵprov = i0.ɵɵdefineInjectable({ token: NotifierQueueService, factory: NotifierQueueService.ɵfac });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierQueueService, [{
+                type: i0.Injectable
+            }], function () { return []; }, null);
+    })();
 
     // tslint:disable variable-name
     /**
      * Injection Token for notifier options
      */
-    var NotifierOptionsToken = new core.InjectionToken('[angular-notifier] Notifier Options');
+    var NotifierOptionsToken = new i0.InjectionToken('[angular-notifier] Notifier Options');
     /**
      * Injection Token for notifier configuration
      */
-    var NotifierConfigToken = new core.InjectionToken('[anuglar-notifier] Notifier Config');
+    var NotifierConfigToken = new i0.InjectionToken('[anuglar-notifier] Notifier Config');
     // tslint:enable variable-name
 
     /**
@@ -278,16 +280,20 @@
             }
             this.show(notificationOptions);
         };
-        /** @nocollapse */ NotifierService.ɵfac = function NotifierService_Factory(t) { return new (t || NotifierService)(core.ɵɵinject(NotifierQueueService), core.ɵɵinject(NotifierConfigToken)); };
-        /** @nocollapse */ NotifierService.ɵprov = core.ɵɵdefineInjectable({ token: NotifierService, factory: NotifierService.ɵfac });
         return NotifierService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierService, [{
-            type: core.Injectable
-        }], function () { return [{ type: NotifierQueueService }, { type: NotifierConfig, decorators: [{
-                    type: core.Inject,
-                    args: [NotifierConfigToken]
-                }] }]; }, null); })();
+    /** @nocollapse */ NotifierService.ɵfac = function NotifierService_Factory(t) { return new (t || NotifierService)(i0.ɵɵinject(NotifierQueueService), i0.ɵɵinject(NotifierConfigToken)); };
+    /** @nocollapse */ NotifierService.ɵprov = i0.ɵɵdefineInjectable({ token: NotifierService, factory: NotifierService.ɵfac });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierService, [{
+                type: i0.Injectable
+            }], function () {
+            return [{ type: NotifierQueueService }, { type: NotifierConfig, decorators: [{
+                            type: i0.Inject,
+                            args: [NotifierConfigToken]
+                        }] }];
+        }, null);
+    })();
 
     /**
      * Notifier timer service
@@ -349,13 +355,15 @@
         NotifierTimerService.prototype.finish = function () {
             this.finishPromiseResolver();
         };
-        /** @nocollapse */ NotifierTimerService.ɵfac = function NotifierTimerService_Factory(t) { return new (t || NotifierTimerService)(); };
-        /** @nocollapse */ NotifierTimerService.ɵprov = core.ɵɵdefineInjectable({ token: NotifierTimerService, factory: NotifierTimerService.ɵfac });
         return NotifierTimerService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierTimerService, [{
-            type: core.Injectable
-        }], function () { return []; }, null); })();
+    /** @nocollapse */ NotifierTimerService.ɵfac = function NotifierTimerService_Factory(t) { return new (t || NotifierTimerService)(); };
+    /** @nocollapse */ NotifierTimerService.ɵprov = i0.ɵɵdefineInjectable({ token: NotifierTimerService, factory: NotifierTimerService.ɵfac });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierTimerService, [{
+                type: i0.Injectable
+            }], function () { return []; }, null);
+    })();
 
     /**
      * Fade animation preset
@@ -527,43 +535,53 @@
                 }
             };
         };
-        /** @nocollapse */ NotifierAnimationService.ɵfac = function NotifierAnimationService_Factory(t) { return new (t || NotifierAnimationService)(); };
-        /** @nocollapse */ NotifierAnimationService.ɵprov = core.ɵɵdefineInjectable({ token: NotifierAnimationService, factory: NotifierAnimationService.ɵfac });
         return NotifierAnimationService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierAnimationService, [{
-            type: core.Injectable
-        }], function () { return []; }, null); })();
+    /** @nocollapse */ NotifierAnimationService.ɵfac = function NotifierAnimationService_Factory(t) { return new (t || NotifierAnimationService)(); };
+    /** @nocollapse */ NotifierAnimationService.ɵprov = i0.ɵɵdefineInjectable({ token: NotifierAnimationService, factory: NotifierAnimationService.ɵfac });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierAnimationService, [{
+                type: i0.Injectable
+            }], function () { return []; }, null);
+    })();
 
     var _c0 = function (a0) { return { notification: a0 }; };
-    function NotifierNotificationComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0, 2);
-    } if (rf & 2) {
-        var ctx_r0 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r0.notification.template)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c0, ctx_r0.notification));
-    } }
-    function NotifierNotificationComponent_ng_template_1_button_2_Template(rf, ctx) { if (rf & 1) {
-        var _r5 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "button", 5);
-        core.ɵɵlistener("click", function NotifierNotificationComponent_ng_template_1_button_2_Template_button_click_0_listener() { core.ɵɵrestoreView(_r5); var ctx_r4 = core.ɵɵnextContext(2); return ctx_r4.onClickDismiss(); });
-        core.ɵɵnamespaceSVG();
-        core.ɵɵelementStart(1, "svg", 6);
-        core.ɵɵelement(2, "path", 7);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } }
-    function NotifierNotificationComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "p", 3);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-        core.ɵɵtemplate(2, NotifierNotificationComponent_ng_template_1_button_2_Template, 3, 0, "button", 4);
-    } if (rf & 2) {
-        var ctx_r2 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r2.notification.message);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r2.config.behaviour.showDismissButton);
-    } }
+    function NotifierNotificationComponent_ng_container_0_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementContainer(0, 2);
+        }
+        if (rf & 2) {
+            var ctx_r0 = i0.ɵɵnextContext();
+            i0.ɵɵproperty("ngTemplateOutlet", ctx_r0.notification.template)("ngTemplateOutletContext", i0.ɵɵpureFunction1(2, _c0, ctx_r0.notification));
+        }
+    }
+    function NotifierNotificationComponent_ng_template_1_button_2_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r5_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "button", 5);
+            i0.ɵɵlistener("click", function NotifierNotificationComponent_ng_template_1_button_2_Template_button_click_0_listener() { i0.ɵɵrestoreView(_r5_1); var ctx_r4 = i0.ɵɵnextContext(2); return ctx_r4.onClickDismiss(); });
+            i0.ɵɵnamespaceSVG();
+            i0.ɵɵelementStart(1, "svg", 6);
+            i0.ɵɵelement(2, "path", 7);
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+    }
+    function NotifierNotificationComponent_ng_template_1_Template(rf, ctx) {
+        if (rf & 1) {
+            i0.ɵɵelementStart(0, "p", 3);
+            i0.ɵɵtext(1);
+            i0.ɵɵelementEnd();
+            i0.ɵɵtemplate(2, NotifierNotificationComponent_ng_template_1_button_2_Template, 3, 0, "button", 4);
+        }
+        if (rf & 2) {
+            var ctx_r2 = i0.ɵɵnextContext();
+            i0.ɵɵadvance(1);
+            i0.ɵɵtextInterpolate(ctx_r2.notification.message);
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("ngIf", ctx_r2.config.behaviour.showDismissButton);
+        }
+    }
     /**
      * Notifier notification component
      * -------------------------------
@@ -584,8 +602,8 @@
          */
         function NotifierNotificationComponent(elementRef, renderer, notifierService, notifierTimerService, notifierAnimationService) {
             this.config = notifierService.getConfig();
-            this.ready = new core.EventEmitter();
-            this.dismiss = new core.EventEmitter();
+            this.ready = new i0.EventEmitter();
+            this.dismiss = new i0.EventEmitter();
             this.timerService = notifierTimerService;
             this.animationService = notifierAnimationService;
             this.renderer = renderer;
@@ -835,60 +853,70 @@
             this.renderer.addClass(this.element, "notifier__notification--" + this.notification.type);
             this.renderer.addClass(this.element, "notifier__notification--" + this.config.theme);
         };
-        /** @nocollapse */ NotifierNotificationComponent.ɵfac = function NotifierNotificationComponent_Factory(t) { return new (t || NotifierNotificationComponent)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(NotifierService), core.ɵɵdirectiveInject(NotifierTimerService), core.ɵɵdirectiveInject(NotifierAnimationService)); };
-        /** @nocollapse */ NotifierNotificationComponent.ɵcmp = core.ɵɵdefineComponent({ type: NotifierNotificationComponent, selectors: [["notifier-notification"]], hostAttrs: [1, "notifier__notification"], hostBindings: function NotifierNotificationComponent_HostBindings(rf, ctx) { if (rf & 1) {
-                core.ɵɵlistener("click", function NotifierNotificationComponent_click_HostBindingHandler() { return ctx.onNotificationClick(); })("mouseout", function NotifierNotificationComponent_mouseout_HostBindingHandler() { return ctx.onNotificationMouseout(); })("mouseover", function NotifierNotificationComponent_mouseover_HostBindingHandler() { return ctx.onNotificationMouseover(); });
-            } }, inputs: { notification: "notification" }, outputs: { ready: "ready", dismiss: "dismiss" }, features: [core.ɵɵProvidersFeature([
-                    // We provide the timer to the component's local injector, so that every notification components gets its own
-                    // instance of the timer service, thus running their timers independently from each other
-                    NotifierTimerService
-                ])], decls: 3, vars: 2, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf", "ngIfElse"], ["predefinedNotification", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "notifier__notification-message"], ["class", "notifier__notification-button", "type", "button", "title", "dismiss", 3, "click", 4, "ngIf"], ["type", "button", "title", "dismiss", 1, "notifier__notification-button", 3, "click"], ["viewBox", "0 0 24 24", "width", "20", "height", "20", 1, "notifier__notification-button-icon"], ["d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"]], template: function NotifierNotificationComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NotifierNotificationComponent_ng_container_0_Template, 1, 4, "ng-container", 0);
-                core.ɵɵtemplate(1, NotifierNotificationComponent_ng_template_1_Template, 3, 2, "ng-template", null, 1, core.ɵɵtemplateRefExtractor);
-            } if (rf & 2) {
-                var _r1 = core.ɵɵreference(2);
-                core.ɵɵproperty("ngIf", ctx.notification.template)("ngIfElse", _r1);
-            } }, directives: [common.NgIf, common.NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
         return NotifierNotificationComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierNotificationComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    host: {
-                        '(click)': 'onNotificationClick()',
-                        '(mouseout)': 'onNotificationMouseout()',
-                        '(mouseover)': 'onNotificationMouseover()',
-                        class: 'notifier__notification'
-                    },
-                    providers: [
-                        // We provide the timer to the component's local injector, so that every notification components gets its own
-                        // instance of the timer service, thus running their timers independently from each other
-                        NotifierTimerService
-                    ],
-                    selector: 'notifier-notification',
-                    templateUrl: './notifier-notification.component.html'
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: core.Renderer2 }, { type: NotifierService }, { type: NotifierTimerService }, { type: NotifierAnimationService }]; }, { notification: [{
-                type: core.Input
-            }], ready: [{
-                type: core.Output
-            }], dismiss: [{
-                type: core.Output
-            }] }); })();
+    /** @nocollapse */ NotifierNotificationComponent.ɵfac = function NotifierNotificationComponent_Factory(t) { return new (t || NotifierNotificationComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(NotifierService), i0.ɵɵdirectiveInject(NotifierTimerService), i0.ɵɵdirectiveInject(NotifierAnimationService)); };
+    /** @nocollapse */ NotifierNotificationComponent.ɵcmp = i0.ɵɵdefineComponent({ type: NotifierNotificationComponent, selectors: [["notifier-notification"]], hostAttrs: [1, "notifier__notification"], hostBindings: function NotifierNotificationComponent_HostBindings(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵlistener("click", function NotifierNotificationComponent_click_HostBindingHandler() { return ctx.onNotificationClick(); })("mouseout", function NotifierNotificationComponent_mouseout_HostBindingHandler() { return ctx.onNotificationMouseout(); })("mouseover", function NotifierNotificationComponent_mouseover_HostBindingHandler() { return ctx.onNotificationMouseover(); });
+            }
+        }, inputs: { notification: "notification" }, outputs: { ready: "ready", dismiss: "dismiss" }, features: [i0.ɵɵProvidersFeature([
+                // We provide the timer to the component's local injector, so that every notification components gets its own
+                // instance of the timer service, thus running their timers independently from each other
+                NotifierTimerService
+            ])], decls: 3, vars: 2, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf", "ngIfElse"], ["predefinedNotification", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "notifier__notification-message"], ["class", "notifier__notification-button", "type", "button", "title", "dismiss", 3, "click", 4, "ngIf"], ["type", "button", "title", "dismiss", 1, "notifier__notification-button", 3, "click"], ["viewBox", "0 0 24 24", "width", "20", "height", "20", 1, "notifier__notification-button-icon"], ["d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"]], template: function NotifierNotificationComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵtemplate(0, NotifierNotificationComponent_ng_container_0_Template, 1, 4, "ng-container", 0);
+                i0.ɵɵtemplate(1, NotifierNotificationComponent_ng_template_1_Template, 3, 2, "ng-template", null, 1, i0.ɵɵtemplateRefExtractor);
+            }
+            if (rf & 2) {
+                var _r1 = i0.ɵɵreference(2);
+                i0.ɵɵproperty("ngIf", ctx.notification.template)("ngIfElse", _r1);
+            }
+        }, directives: [i4.NgIf, i4.NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierNotificationComponent, [{
+                type: i0.Component,
+                args: [{
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        host: {
+                            '(click)': 'onNotificationClick()',
+                            '(mouseout)': 'onNotificationMouseout()',
+                            '(mouseover)': 'onNotificationMouseover()',
+                            class: 'notifier__notification'
+                        },
+                        providers: [
+                            // We provide the timer to the component's local injector, so that every notification components gets its own
+                            // instance of the timer service, thus running their timers independently from each other
+                            NotifierTimerService
+                        ],
+                        selector: 'notifier-notification',
+                        templateUrl: './notifier-notification.component.html'
+                    }]
+            }], function () { return [{ type: i0.ElementRef }, { type: i0.Renderer2 }, { type: NotifierService }, { type: NotifierTimerService }, { type: NotifierAnimationService }]; }, { notification: [{
+                    type: i0.Input
+                }], ready: [{
+                    type: i0.Output
+                }], dismiss: [{
+                    type: i0.Output
+                }] });
+    })();
 
-    function NotifierContainerComponent_li_1_Template(rf, ctx) { if (rf & 1) {
-        var _r3 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "li", 1);
-        core.ɵɵelementStart(1, "notifier-notification", 2);
-        core.ɵɵlistener("ready", function NotifierContainerComponent_li_1_Template_notifier_notification_ready_1_listener($event) { core.ɵɵrestoreView(_r3); var ctx_r2 = core.ɵɵnextContext(); return ctx_r2.onNotificationReady($event); })("dismiss", function NotifierContainerComponent_li_1_Template_notifier_notification_dismiss_1_listener($event) { core.ɵɵrestoreView(_r3); var ctx_r4 = core.ɵɵnextContext(); return ctx_r4.onNotificationDismiss($event); });
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var notification_r1 = ctx.$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("notification", notification_r1);
-    } }
+    function NotifierContainerComponent_li_1_Template(rf, ctx) {
+        if (rf & 1) {
+            var _r3_1 = i0.ɵɵgetCurrentView();
+            i0.ɵɵelementStart(0, "li", 1);
+            i0.ɵɵelementStart(1, "notifier-notification", 2);
+            i0.ɵɵlistener("ready", function NotifierContainerComponent_li_1_Template_notifier_notification_ready_1_listener($event) { i0.ɵɵrestoreView(_r3_1); var ctx_r2 = i0.ɵɵnextContext(); return ctx_r2.onNotificationReady($event); })("dismiss", function NotifierContainerComponent_li_1_Template_notifier_notification_dismiss_1_listener($event) { i0.ɵɵrestoreView(_r3_1); var ctx_r4 = i0.ɵɵnextContext(); return ctx_r4.onNotificationDismiss($event); });
+            i0.ɵɵelementEnd();
+            i0.ɵɵelementEnd();
+        }
+        if (rf & 2) {
+            var notification_r1 = ctx.$implicit;
+            i0.ɵɵadvance(1);
+            i0.ɵɵproperty("notification", notification_r1);
+        }
+    }
     /**
      * Notifier container component
      * ----------------------------
@@ -1302,28 +1330,33 @@
             var notificationIndex = this.notifications.findIndex(function (currentNotification) { return currentNotification.id === notificationId; });
             return (notificationIndex !== -1 ? notificationIndex : undefined);
         };
-        /** @nocollapse */ NotifierContainerComponent.ɵfac = function NotifierContainerComponent_Factory(t) { return new (t || NotifierContainerComponent)(core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(NotifierQueueService), core.ɵɵdirectiveInject(NotifierService)); };
-        /** @nocollapse */ NotifierContainerComponent.ɵcmp = core.ɵɵdefineComponent({ type: NotifierContainerComponent, selectors: [["notifier-container"]], hostAttrs: [1, "notifier__container"], decls: 2, vars: 2, consts: [["class", "notifier__container-list", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "notifier__container-list"], [3, "notification", "ready", "dismiss"]], template: function NotifierContainerComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "ul");
-                core.ɵɵtemplate(1, NotifierContainerComponent_li_1_Template, 2, 1, "li", 0);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngForOf", ctx.notifications)("ngForTrackBy", ctx.identifyNotification);
-            } }, directives: [common.NgForOf, NotifierNotificationComponent], encapsulation: 2, changeDetection: 0 });
         return NotifierContainerComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierContainerComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    host: {
-                        class: 'notifier__container'
-                    },
-                    selector: 'notifier-container',
-                    templateUrl: './notifier-container.component.html'
-                }]
-        }], function () { return [{ type: core.ChangeDetectorRef }, { type: NotifierQueueService }, { type: NotifierService }]; }, null); })();
+    /** @nocollapse */ NotifierContainerComponent.ɵfac = function NotifierContainerComponent_Factory(t) { return new (t || NotifierContainerComponent)(i0.ɵɵdirectiveInject(i0.ChangeDetectorRef), i0.ɵɵdirectiveInject(NotifierQueueService), i0.ɵɵdirectiveInject(NotifierService)); };
+    /** @nocollapse */ NotifierContainerComponent.ɵcmp = i0.ɵɵdefineComponent({ type: NotifierContainerComponent, selectors: [["notifier-container"]], hostAttrs: [1, "notifier__container"], decls: 2, vars: 2, consts: [["class", "notifier__container-list", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "notifier__container-list"], [3, "notification", "ready", "dismiss"]], template: function NotifierContainerComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "ul");
+                i0.ɵɵtemplate(1, NotifierContainerComponent_li_1_Template, 2, 1, "li", 0);
+                i0.ɵɵelementEnd();
+            }
+            if (rf & 2) {
+                i0.ɵɵadvance(1);
+                i0.ɵɵproperty("ngForOf", ctx.notifications)("ngForTrackBy", ctx.identifyNotification);
+            }
+        }, directives: [i4.NgForOf, NotifierNotificationComponent], encapsulation: 2, changeDetection: 0 });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierContainerComponent, [{
+                type: i0.Component,
+                args: [{
+                        changeDetection: i0.ChangeDetectionStrategy.OnPush,
+                        host: {
+                            class: 'notifier__container'
+                        },
+                        selector: 'notifier-container',
+                        templateUrl: './notifier-container.component.html'
+                    }]
+            }], function () { return [{ type: i0.ChangeDetectorRef }, { type: NotifierQueueService }, { type: NotifierService }]; }, null);
+    })();
 
     /**
      * Factory for a notifier configuration with custom options
@@ -1381,48 +1414,56 @@
                 ]
             };
         };
-        /** @nocollapse */ NotifierModule.ɵmod = core.ɵɵdefineNgModule({ type: NotifierModule });
-        /** @nocollapse */ NotifierModule.ɵinj = core.ɵɵdefineInjector({ factory: function NotifierModule_Factory(t) { return new (t || NotifierModule)(); }, providers: [
-                NotifierAnimationService,
-                NotifierService,
-                NotifierQueueService,
-                // Provide the default notifier configuration if just the module is imported
-                {
-                    provide: NotifierConfigToken,
-                    useFactory: notifierDefaultConfigFactory
-                }
-            ], imports: [[
-                    common.CommonModule
-                ]] });
         return NotifierModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NotifierModule, { declarations: [NotifierContainerComponent,
-            NotifierNotificationComponent], imports: [common.CommonModule], exports: [NotifierContainerComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NotifierModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [
-                        NotifierContainerComponent,
-                        NotifierNotificationComponent
-                    ],
-                    exports: [
-                        NotifierContainerComponent
-                    ],
-                    imports: [
-                        common.CommonModule
-                    ],
-                    providers: [
-                        NotifierAnimationService,
-                        NotifierService,
-                        NotifierQueueService,
-                        // Provide the default notifier configuration if just the module is imported
-                        {
-                            provide: NotifierConfigToken,
-                            useFactory: notifierDefaultConfigFactory
-                        }
-                    ]
-                }]
-        }], null, null); })();
+    /** @nocollapse */ NotifierModule.ɵmod = i0.ɵɵdefineNgModule({ type: NotifierModule });
+    /** @nocollapse */ NotifierModule.ɵinj = i0.ɵɵdefineInjector({ factory: function NotifierModule_Factory(t) { return new (t || NotifierModule)(); }, providers: [
+            NotifierAnimationService,
+            NotifierService,
+            NotifierQueueService,
+            // Provide the default notifier configuration if just the module is imported
+            {
+                provide: NotifierConfigToken,
+                useFactory: notifierDefaultConfigFactory
+            }
+        ], imports: [[
+                i4.CommonModule
+            ]] });
+    (function () {
+        (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(NotifierModule, { declarations: [NotifierContainerComponent,
+                NotifierNotificationComponent], imports: [i4.CommonModule], exports: [NotifierContainerComponent] });
+    })();
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(NotifierModule, [{
+                type: i0.NgModule,
+                args: [{
+                        declarations: [
+                            NotifierContainerComponent,
+                            NotifierNotificationComponent
+                        ],
+                        exports: [
+                            NotifierContainerComponent
+                        ],
+                        imports: [
+                            i4.CommonModule
+                        ],
+                        providers: [
+                            NotifierAnimationService,
+                            NotifierService,
+                            NotifierQueueService,
+                            // Provide the default notifier configuration if just the module is imported
+                            {
+                                provide: NotifierConfigToken,
+                                useFactory: notifierDefaultConfigFactory
+                            }
+                        ]
+                    }]
+            }], null, null);
+    })();
+
+    /**
+     * Generated bundle index. Do not edit.
+     */
 
     exports.NotifierConfig = NotifierConfig;
     exports.NotifierConfigToken = NotifierConfigToken;

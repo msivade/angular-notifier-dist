@@ -19,81 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68bd43de-6c72-423f-a786-c120180310bc" name="Default Changelist" comment="Builded angular-notifier for angular 9 with styles.css">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-notifier.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/angular-notifier.umd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/angular-notifier.umd.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/angular-notifier.umd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundles/angular-notifier.umd.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/angular-notifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/animation-presets/fade.animation-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/animation-presets/slide.animation-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/components/notifier-container.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/components/notifier-notification.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/models/notifier-action.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/models/notifier-animation.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/models/notifier-config.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/models/notifier-notification.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/notifier.module.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/notifier.tokens.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/services/notifier-animation.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/services/notifier-queue.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/services/notifier-timer.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm2015/lib/services/notifier.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/angular-notifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/animation-presets/fade.animation-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/animation-presets/slide.animation-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/components/notifier-container.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/components/notifier-notification.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/models/notifier-action.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/models/notifier-animation.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/models/notifier-config.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/models/notifier-notification.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/notifier.module.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/notifier.tokens.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/services/notifier-animation.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/services/notifier-queue.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/services/notifier-timer.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/esm5/lib/services/notifier.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fesm2015/angular-notifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fesm2015/angular-notifier.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fesm5/angular-notifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fesm5/angular-notifier.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/animation-presets/fade.animation-preset.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/animation-presets/slide.animation-preset.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/notifier-container.component.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/components/notifier-notification.component.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/notifier-action.model.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/notifier-animation.model.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/notifier-config.model.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/notifier-notification.model.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/notifier.module.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/notifier.tokens.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/notifier-animation.service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/notifier-queue.service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/notifier-timer.service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/notifier.service.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/core.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/themes/theme-material.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/themes/theme-material.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-error.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-error.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-info.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-info.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-success.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-success.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-warning.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/types/type-warning.scss" beforeDir="false" />
-    </list>
+    <list default="true" id="68bd43de-6c72-423f-a786-c120180310bc" name="Default Changelist" comment="Builded angular-notifier for angular 9 with styles.css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,13 +68,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,7 +92,7 @@
       <updated>1604072260623</updated>
       <workItem from="1604072261750" duration="977000" />
       <workItem from="1604307080254" duration="1253000" />
-      <workItem from="1604308647015" duration="1816000" />
+      <workItem from="1604308647015" duration="2078000" />
     </task>
     <task id="LOCAL-00001" summary="Builded angular-notifier for angular 9">
       <created>1604072323000</created>
@@ -222,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604311141895</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Builded angular-notifier for angular 9 with styles.css">
+      <created>1604312124628</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604312124628</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,9 +181,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Builded angular-notifier for angular 9 with styles.css" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604311164199">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604312127298">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604311164199" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604312127298" />
   </component>
 </project>

@@ -33,7 +33,7 @@ export declare class NotifierModule {
      * @param   [options={}] - Custom notifier options
      * @returns - Notifier module with custom providers
      */
-    static withConfig(options?: NotifierOptions): i0.ModuleWithProviders<NotifierModule>;
+    static withConfig(options?: NotifierOptions): ModuleWithProviders<NotifierModule>;
     static ɵmod: i0.ɵɵNgModuleDefWithMeta<NotifierModule, [typeof i1.NotifierContainerComponent, typeof i2.NotifierNotificationComponent], [typeof i3.CommonModule], [typeof i1.NotifierContainerComponent]>;
     static ɵinj: i0.ɵɵInjectorDef<NotifierModule>;
 }
